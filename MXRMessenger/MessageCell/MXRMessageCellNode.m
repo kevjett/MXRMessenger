@@ -61,7 +61,7 @@
     
     ASStackLayoutSpec* headerContentAndFooterStack = [ASStackLayoutSpec verticalStackLayoutSpec];
     headerContentAndFooterStack.alignItems = ASStackLayoutAlignItemsStretch;
-    contentInset.style.alignSelf = _layoutConfig.layoutDirection == MXRMessageLayoutDirectionLeftToRight ? ASStackLayoutAlignSelfStart : ASStackLayoutAlignSelfEnd;
+    contentInset.style.alignSelf = _layoutConfig.layoutDirection == MXRMessageLayoutDirectionLeftToRight ? ASStackLayoutAlignSelfStart : (_layoutConfig.layoutDirection == MXRMessageLayoutDirectionRightToLeft ? ASStackLayoutAlignSelfEnd : ASStackLayoutAlignSelfCenter);
     NSMutableArray *a = [[NSMutableArray alloc] init];
     if (_headerNode) [a addObject:_headerNode];
     [a addObject:contentInset];

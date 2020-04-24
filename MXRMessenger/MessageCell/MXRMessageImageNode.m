@@ -63,7 +63,7 @@
 }
 
 - (instancetype)initWithConfiguration:(MXRMessageNodeConfiguration *)configuration {
-    ASDISPLAYNODE_NOT_DESIGNATED_INITIALIZER();
+    //ASDISPLAYNODE_NOT_DESIGNATED_INITIALIZER();
     return [self initWithImageURL:nil configuration:nil cornersToApplyMaxRadius:UIRectCornerAllCorners showsPlayButton:NO];
 }
 

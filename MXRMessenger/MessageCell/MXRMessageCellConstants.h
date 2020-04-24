@@ -22,6 +22,11 @@ typedef NS_ENUM(NSInteger, MXRMessageLayoutDirection) {
      * Avatar on Right. All content pinned to right.
      */
     MXRMessageLayoutDirectionRightToLeft = 1,
+    
+    /**
+     * All content centered.
+     */
+    MXRMessageLayoutDirectionCentered = 2,
 };
 
 typedef NS_ENUM(NSInteger, MXRMessageContentType) {
